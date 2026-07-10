@@ -1,10 +1,253 @@
-binaya911.github.io
-│
-├── index.html        ← main portfolio website code
-├── style.css          ← website design / colours / layout
-├── script.js          ← optional animations or interactions
-├── images
-│   ├── profile.jpg
-│   ├── packet-tracer.png
-│   └── dashboard.png
-└── README.md
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binaya Shrestha | IT Support Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #111827;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      padding: 100px 10%;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #334155;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e40af;
+      margin: 8px 8px 0 0;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #111827;
+    }
+
+    .contact p {
+      margin: 10px;
+      font-size: 17px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Binaya Shrestha</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Hello, I'm <span>Binaya</span></h1>
+    <p>
+      Entry-level IT Support and Networking professional with hands-on experience
+      in Microsoft 365, Active Directory, networking, Cisco Packet Tracer, cloud basics,
+      and technical troubleshooting.
+    </p>
+
+    <a class="btn" href="#projects">View My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am building my career in IT support, networking, cloud technologies, and system administration.
+      I currently have experience supporting users, managing Microsoft 365 environments,
+      troubleshooting technical issues, and completing hands-on networking labs.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+      <span>IT Support</span>
+      <span>Active Directory</span>
+      <span>Microsoft 365</span>
+      <span>Azure Fundamentals</span>
+      <span>AWS Basics</span>
+      <span>Networking</span>
+      <span>DNS</span>
+      <span>DHCP</span>
+      <span>TCP/IP</span>
+      <span>Cisco Packet Tracer</span>
+      <span>Windows Server</span>
+      <span>Intune</span>
+      <span>Ticketing Systems</span>
+      <span>Remote Support</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Dual Network Routing Lab</h3>
+        <p>
+          Built two separate networks in Cisco Packet Tracer using routers, switches,
+          static IP addressing, default gateways, and routing configuration.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>DHCP Configuration Lab</h3>
+        <p>
+          Configured a router as a DHCP server to automatically assign IP addresses,
+          default gateways, and DNS settings to connected devices.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Student Performance Dashboard</h3>
+        <p>
+          Developed a Python Dash dashboard using data visualisation and machine learning
+          to analyse student performance and predict outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: your-email@example.com</p>
+    <p>Phone: +61 4XX XXX XXX</p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/" target="_blank" style="color:#38bdf8;">
+        View My LinkedIn
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/binaya911" target="_blank" style="color:#38bdf8;">
+        github.com/binaya911
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Binaya Shrestha | IT Support Portfolio</p>
+  </footer>
+
+</body>
+</html>
