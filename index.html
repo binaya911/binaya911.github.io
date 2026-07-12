@@ -1,252 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Binaya Shrestha | IT Support Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<title>Binaya Shrestha | IT Support Portfolio</title>
 
-    body {
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<style>
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      background: #111827;
-      position: sticky;
-      top: 0;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
 
-    nav h2 {
-      color: #38bdf8;
-    }
+body{
+background:#0f172a;
+color:white;
+line-height:1.7;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 15px;
-    }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111827;
+position:sticky;
+top:0;
+z-index:100;
+}
 
-    nav a:hover {
-      color: #38bdf8;
-    }
+nav h2{
+color:#38bdf8;
+}
 
-    .hero {
-      padding: 100px 10%;
-      text-align: center;
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
-    }
+nav a:hover{
+color:#38bdf8;
+}
 
-    .hero h1 span {
-      color: #38bdf8;
-    }
+.hero{
 
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-      color: #cbd5e1;
-    }
+padding:120px 10%;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
 
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 22px;
-      background: #38bdf8;
-      color: #0f172a;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
+}
 
-    .btn:hover {
-      background: white;
-    }
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
 
-    section {
-      padding: 70px 10%;
-    }
+.hero span{
+color:#38bdf8;
+}
 
-    h2 {
-      font-size: 30px;
-      margin-bottom: 25px;
-      color: #38bdf8;
-    }
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+color:#cbd5e1;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+background:#38bdf8;
+color:#111827;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+margin-right:15px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 10px;
-      border: 1px solid #334155;
-    }
+.btn:hover{
+background:white;
+}
 
-    .card h3 {
-      margin-bottom: 12px;
-      color: white;
-    }
+section{
 
-    .card p {
-      color: #cbd5e1;
-    }
+padding:80px 10%;
 
-    .skills span {
-      display: inline-block;
-      background: #1e40af;
-      margin: 8px 8px 0 0;
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
+}
 
-    .contact {
-      text-align: center;
-      background: #111827;
-    }
+h2{
 
-    .contact p {
-      margin: 10px;
-      font-size: 17px;
-    }
+font-size:36px;
+margin-bottom:35px;
+color:#38bdf8;
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #94a3b8;
-    }
-  </style>
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+border:1px solid #334155;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#38bdf8;
+
+}
+
+.card p{
+
+color:#cbd5e1;
+
+}
+
+.skills span{
+
+display:inline-block;
+background:#1d4ed8;
+padding:10px 18px;
+margin:8px;
+border-radius:30px;
+
+}
+
+.contact{
+
+text-align:center;
+background:#111827;
+
+}
+
+.contact p{
+
+margin:12px;
+
+}
+
+.contact a{
+
+color:#38bdf8;
+text-decoration:none;
+
+}
+
+footer{
+
+background:#020617;
+padding:20px;
+text-align:center;
+color:#94a3b8;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <nav>
-    <h2>Binaya Shrestha</h2>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+<nav>
 
-  <section class="hero">
-    <h1>Hello, I'm <span>Binaya</span></h1>
-    <p>
-      Entry-level IT Support and Networking professional with hands-on experience
-      in Microsoft 365, Active Directory, networking, Cisco Packet Tracer, cloud basics,
-      and technical troubleshooting.
-    </p>
+<h2>Binaya Shrestha</h2>
 
-    <a class="btn" href="#projects">View My Projects</a>
-  </section>
+<div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am building my career in IT support, networking, cloud technologies, and system administration.
-      I currently have experience supporting users, managing Microsoft 365 environments,
-      troubleshooting technical issues, and completing hands-on networking labs.
-    </p>
-  </section>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
+</div>
 
-    <div class="skills">
-      <span>IT Support</span>
-      <span>Active Directory</span>
-      <span>Microsoft 365</span>
-      <span>Azure Fundamentals</span>
-      <span>AWS Basics</span>
-      <span>Networking</span>
-      <span>DNS</span>
-      <span>DHCP</span>
-      <span>TCP/IP</span>
-      <span>Cisco Packet Tracer</span>
-      <span>Windows Server</span>
-      <span>Intune</span>
-      <span>Ticketing Systems</span>
-      <span>Remote Support</span>
-    </div>
-  </section>
+</nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<section class="hero">
 
-    <div class="grid">
-      <div class="card">
-        <h3>Dual Network Routing Lab</h3>
-        <p>
-          Built two separate networks in Cisco Packet Tracer using routers, switches,
-          static IP addressing, default gateways, and routing configuration.
-        </p>
-      </div>
+<h1>Hello, I'm <span>Binaya Shrestha</span></h1>
 
-      <div class="card">
-        <h3>DHCP Configuration Lab</h3>
-        <p>
-          Configured a router as a DHCP server to automatically assign IP addresses,
-          default gateways, and DNS settings to connected devices.
-        </p>
-      </div>
+<p>
 
-      <div class="card">
-        <h3>Student Performance Dashboard</h3>
-        <p>
-          Developed a Python Dash dashboard using data visualisation and machine learning
-          to analyse student performance and predict outcomes.
-        </p>
-      </div>
-    </div>
-  </section>
+IT Support | Microsoft 365 | Active Directory | Microsoft Intune |
+Networking | Azure Fundamentals | AWS Basics
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: xthabinaya911@gmail.com</p>
-    <p>Phone: +61 430081858</p>
+<br><br>
 
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/" target="_blank" style="color:#38bdf8;">
-        View My LinkedIn
-      </a>
-    </p>
+Passionate about solving technical problems, supporting users,
+and continuously improving my skills through real-world experience
+and hands-on home lab projects.
 
-    <p>
-      GitHub:
-      <a href="https://github.com/binaya911" target="_blank" style="color:#38bdf8;">
-        github.com/binaya911
-      </a>
-    </p>
-  </section>
+</p>
 
-  <footer>
-    <p>© 2026 Binaya Shrestha | IT Support Portfolio</p>
-  </footer>
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="YOUR_RESUME_LINK_HERE" target="_blank" class="btn">
+Download Resume
+</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am an IT Support professional with hands-on experience in Microsoft 365,
+Active Directory, Microsoft Intune, Windows administration, networking,
+cloud technologies and troubleshooting.
+
+<br><br>
+
+I currently work as a Junior Marketing Officer at King's Own Institute,
+where I act as the bridge between international education agents,
+the admissions team and internal departments to ensure smooth communication
+throughout the student enrolment process. I also prepare reports,
+coordinate enquiries and provide operational support to management.
+
+<br><br>
+
+Alongside my professional experience, I continuously build home lab
+projects using Cisco Packet Tracer, Windows Server and Microsoft cloud
+technologies to strengthen my practical IT skills.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span>IT Support</span>
+
+<span>Microsoft 365</span>
+
+<span>Active Directory</span>
+
+<span>Microsoft Intune</span>
+
+<span>Azure Fundamentals</span>
+
+<span>AWS Basics</span>
+
+<span>Windows Server</span>
+
+<span>Networking</span>
+
+<span>Cisco Packet Tracer</span>
+
+<span>DNS</span>
+
+<span>DHCP</span>
+
+<span>TCP/IP</span>
+
+<span>VPN</span>
+
+<span>LAN/WAN</span>
+
+<span>Microsoft Exchange</span>
+
+<span>SharePoint</span>
+
+<span>Teams Administration</span>
+
+<span>Remote Support</span>
+
+<span>Ticketing Systems</span>
+
+<span>PowerShell Basics</span>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🖥️ Active Directory User Lifecycle Management</h3>
+<p>
+Configured Active Directory users, groups, Organizational Units (OUs),
+password resets, account unlocks, onboarding/offboarding and Group Policy
+assignments to simulate real-world Help Desk tasks.
+</p>
+</div>
+
+<div class="card">
+<h3>☁️ Microsoft 365 Administration</h3>
+<p>
+Managed Microsoft 365 administration including mailbox creation,
+shared mailboxes, Teams permissions, SharePoint access,
+email forwarding and licence management.
+</p>
+</div>
+
+<div class="card">
+<h3>🔒 Microsoft Intune Device Management</h3>
+<p>
+Enrolled Windows devices into Microsoft Intune,
+configured compliance policies, security baselines,
+application deployment and endpoint management.
+</p>
+</div>
+
+<div class="card">
+<h3>🌐 Dual Network Routing Lab</h3>
+<p>
+Designed and configured two LAN networks using Cisco Packet Tracer.
+Configured router interfaces, static IP addressing,
+default gateways and verified successful routing using ping tests.
+</p>
+</div>
+
+<div class="card">
+<h3>📡 DHCP Configuration Lab</h3>
+<p>
+Configured Cisco routers as DHCP servers,
+created DHCP pools,
+configured DNS settings,
+verified automatic IP assignment
+and tested end-to-end connectivity.
+</p>
+</div>
+
+<div class="card">
+<h3>🌍 Network Troubleshooting Lab</h3>
+<p>
+Diagnosed DNS failures,
+DHCP issues,
+VPN connectivity,
+LAN/WAN faults,
+TCP/IP misconfigurations
+and Wi-Fi connectivity using structured troubleshooting methods.
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Student Performance Dashboard</h3>
+<p>
+Developed an interactive dashboard using Python,
+Dash,
+Plotly and Machine Learning
+to analyse student performance,
+visualise trends
+and predict academic outcomes.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<p>
+📧 Email:
+<a href="mailto:xthabinaya911@gmail.com">
+xthabinaya911@gmail.com
+</a>
+</p>
+
+<p>
+
+📱 Phone:
++61 430 081 858
+
+</p>
+
+<p>
+
+💼 LinkedIn
+
+<br>
+
+<a href="https://www.linkedin.com/in/binaya-shrestha101/" target="_blank">
+
+View My LinkedIn
+
+</a>
+
+</p>
+
+<p>
+
+💻 GitHub
+
+<br>
+
+<a href="https://github.com/binaya911" target="_blank">
+
+github.com/binaya911
+
+</a>
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Binaya Shrestha | IT Support Portfolio
+
+</footer>
 
 </body>
 </html>
